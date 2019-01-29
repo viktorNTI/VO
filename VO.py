@@ -7,6 +7,7 @@ with open(args.file, newline='') as csvfile: #Öppnar den tidigare specifierade 
     reader = csv.DictReader(csvfile) #Använder reader funktionen för att läsa CSV-filen vi just öppnade
     for row in reader: #För varje rad i filen...
         print(row) #...Så skriver vi ut varje rad
+        #print(row['first_name'], row['last_name']) I "row" parantesen specifierar vi vad vi få ut från varje rad
 
 
 #python VO.py --file students.csv 
